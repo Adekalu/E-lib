@@ -1,0 +1,263 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J-LIBARY</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="amazon.css">
+    <link rel="shortcut icon" href="images/R (1).jpeg" type="image/png">
+
+</head>
+<body>
+
+ <nav class="navbar">
+  
+    <div class="logo">
+        <a href="#"><img src="images/logo.png"></a>
+        <div class="text"> Federal Polytechinc ile-Oluji.</div>
+
+        <form action="https://www.google.com/search" method="get">
+        <div class="search">
+            <ion-icon name="search-outline" class="search-icon"></ion-icon>
+            <input type="search" class="search-input" placeholder="Search" id="frmSearch" search>
+        </div>
+    </form>
+       </div>
+
+  
+    <ul class="menu">
+       <!--<div class="search">
+            <ion-icon name="search-outline"></ion-icon>
+            <input type="search">
+        </div>--> 
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#new">Books</a></li>
+       <li><a href="#section"><ion-icon name="cart-outline"  onclick="count()"></ion-icon>Add to Cart </a></li> 
+      
+       
+        <p id="cart-count"></p>
+    </ul>
+
+
+
+    <div class="menu-btn">
+        <ion-icon name="menu-outline"></ion-icon>
+    </div>
+ </nav>
+
+    <section class="content">
+        <h1 class="poly">WELCOME TO FEDERAL POLYTECHNIC ILE-OLUJI</h1>
+        <p>COMPUTER SCIENCE E-LIBARY</p>
+        <a href="https://fedpolel.edu.ng/history/"><button>Learn More ></button></a>
+     </section>
+
+     <div class="aside" id="About">
+        <div class="pleading">About Us</div>
+        <div class="text2">
+            In july 2014, the Federal Polytechnic, ile-Oluji, Ondo State was established via a Presidential pronouncement. 
+            Three other Federal Polytechnic established the same time were: 
+            <ol type="i" >
+                <li> The Federal Polytechnic of Oil and Gas, Bonny, Rivers State. </li>
+                <li> The Federal Polytechnic, Ukana, Akwa-Ibom State.</li>
+                <li>The National Institute for Construction Technology, Uromi, Edo State </li>
+            </ol>
+           
+           
+         
+            The same week, the Principal Officers visited the National Board for Technical Education in Kaduna and the Federal Ministry of Education in Abuja for all briefing, orientation and documentation that were required of them
+            The Ondo State Government handed over a section of the Gboluji Grammar School, Ile-Oluji to the pioneer Principal Officers as the Polytechnic’s take-off site on assumption of office. Gboluji Grammar School was established in 1954, and it has produced thousands of Nigerians who either attended it for West African School Certificate or for the Higher School Certificate
+
+        </div>
+     </div>
+
+     <h1 class="pleading" id="new">Our Lastest Materials</h1>
+
+     <section class="sec">
+        <div class="products">
+
+           <div class="card">
+                <div class="img"><img src="images/Screen-Shot-2019-07-21-at-11.20.52-1.png"></div><br>
+                <!---->
+                <ul class="cart-items"></ul>
+                <a href="https://www.freecodecamp.org/news/the-html-handbook/" class="link"><div class="title">The HTML BOOK</div></a> 
+                <div class="desc">By Flavio cCopes</div><br>
+               <!--<div class="price">$25.00</div>--> 
+               <div class="buttons">
+                <a href="../files/html-handbook.pdf" download="THE HTML BOOK"><button class="box" >Download</button></a>
+                <button class="box" onclick="addToCart('The HTML BOOK')">Add to Cart</button>
+            </div>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="images/pngwing.com.png"></div><br>
+               <!-- >-->
+               <ul class="cart-items"></ul>
+               <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="link"><div class="title">Cascading Style Sheet.</div></a>
+                <div class="desc"> By.Mozilla</div><br>
+               <!--<div class="price">$120.00</div>--> 
+               <div class="buttons">
+                <a href="../files/CSS.pdf" download=" Cascading Style Sheet"><button class="box">Download</button></a>
+                <button class="box" onclick="addToCart('Cascading Style Sheet')">Add to Cart</button>
+            </div>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="images/pngwing.com (1).png"></div>
+                <br>
+               <ul class="cart-items"></ul>
+               <a href="https://alison.com/course/introduction-to-c-plus-plus-programming-language?utm_source=bing&utm_medium=cpc&utm_campaign=436347242&utm_content=1364496436629199&utm_term=kwd-85282161305445:loc-137&msclkid=f817d727fc44179143acb1c1f01dcb69" class="link">
+                <div class="title">C++</div></a>
+                <div class="desc"> By. Alison.</div><br>
+               <!-- <div class="price">$15.00</div>-->
+               <div class="buttons">
+                <a href="../files/C++.pdf" download="C++"><button class="box">Download</button></a>
+                <button class="box" onclick="addToCart('C++')">Add to Cart</button>
+            </div>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="images/OIP (6).jpeg"></div>
+                <br>
+               <ul class="cart-items"></ul><br>
+               <a href="https://dotnet.microsoft.com/en-us/languages/csharp" class="link"> <div class="title">C#</div></a>
+                <div class="desc"> By. Donet</div><br>
+               <!--<div class="price">$80.00</div>--> 
+               <div class="buttons">
+                <a href="../files/csharp-language.pdf" download="C#"><button class="box">Download</button></a>
+                <button class="box" onclick="addToCart('C#')">Add to Cart</button>
+            </div>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="images/pngwing.com (2).png"></div><br>
+                <ul class="cart-items"></ul>
+                <a href="https://www.javascripttutorial.net/" class="link"><div class="title">JS </div></a> 
+                  <div class="desc">By JavaScript Tutorial Website</div><br>
+                 <!--<div class="price">$50.00</div>-->
+                 <div class="buttons">
+                  <a href="../files/js-handbook.pdf" download="JS"><button class="box">Download</button></a>
+                    <button class="box" onclick="addToCart('JS')">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="images/R (1).png"></div>
+                 <br>
+                <ul class="cart-items"></ul><br>
+                <a href="https://www.python.org/" class="link"><div class="title">Python.</div></a>
+                <div class="desc">By Python Software foundation.</div><br>
+                <!--<div class="price">$160.00</div>-->
+                <div class="buttons">
+                   <a href="../files/python-handbook.pdf" download="Python"><button class="box">Download</button></a> 
+                    <button class="box" onclick="addToCart('Python')">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="images/OIP (7).jpeg"></div><br>
+                <a href="https://www.educative.io/courses/learn-java-from-scratch" class="link"><div class="title"> JAVA.</div></a>
+                <ul class="cart-items"></ul>
+                <div class="desc">By.Educative io.</div> <br> 
+                <div class="buttons">
+                   <a href="../files/JAVA.pdf" download="JAVA"><button class="box">Download</button></a> 
+                    <button class="box" onclick="addToCart('JAVA')">Add to Cart</button>
+                </div>
+               
+                <!--<div class="price">$19.00</div>-->
+                
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="images/OIP (8).jpeg"></div><br>
+                <a href="https://www.learn-php.org/" class="link"><div class="title">PHP.</div></a> 
+                <ul class="cart-items"></ul>
+                 <div class="desc">By Learn PHP.</div> <br>
+                <!--<div class="price">$10.00</div>-->
+                <div class="buttons">
+                  <a href="../files/php-handbook.pdf" download="PHP"><button class="box">Download</button></a>  
+                    <button class="box" onclick="addToCart('PHP')">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="images/R (2).png"></div><br>
+                <a href="https://www.mysqltutorial.org/" class="link"><div class="title">Mysql</div></a> 
+                <ul class="cart-items"></ul>
+                <div class="desc">By mysql Tutorial.</div> <br>
+                <!--<div class="price">$18.00</div>-->
+                <div class="buttons">
+                  <a href="../files/sql-handbook.pdf" download="Mysql"><button class="box">Download</button></a>  
+                    <button class="box" onclick="addToCart('Mysql')">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="images/R (3).png"></div>
+                <!----> <br>
+                <ul class="cart-items"></ul>
+                <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" class="link"><div class="title">Bootstrap.</div></a> 
+                <div class="desc">By.MIT</div><br>
+                <!--<div class="price">$10.00</div>-->
+                <div class="buttons">
+                   <a href="../files/Introducing Bootstrap 4.pdf"><button class="box">Download</button></a>
+                    <button class="box" onclick="addToCart('Bootstrap')">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="images/c n.png"></div>
+                <!----> <br>
+                <ul class="cart-items"></ul>
+                <a href="https://www.geeksforgeeks.org/c-programming-language/" class="link"> <div class="title">C.</div></a>
+                <div class="desc"> By.GeeksforGeeks</div><br>
+                <!--<div class="price">$25.00</div>-->
+                <div class="buttons">
+                  <a href="../files/c-handbook.pdf" download="C"><button class="box">Download</button></a>  
+                    <button class="box" onclick="addToCart('C')">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="images/R (4).png"></div>
+                <!----> <br>
+                <ul class="cart-items"></ul>
+                <a href="https://react.dev/learn" class="link"> <div class="title">React.</div></a>
+                <div class="desc">By.React.Dev</div><br>
+                <!--<div class="price">$16.00</div>-->
+                <div class="buttons">
+                   <a href="../files/react-handbook.pdf" download="React"><button class="box">Download</button></a> 
+                    <button class="box" onclick="addToCart('React')">Add to Cart</button>
+                </div>
+                
+            </div>
+
+            <section class="cart" id="section">
+                <h2>Added.</h2>
+                <ul id="cart-items"></ul>
+               <!--<p class="mee">Total: $<span id="total-price">0</span></p>-->
+                <button class="box" onclick="resetCart()" >Reset</button>
+            </section>
+        </div>
+
+        
+     </section>
+
+  
+
+    
+
+     <footer>
+        <p class="down">Copyrights at <a href="">
+            <span>J-</span>LIBARY 
+        </a>  <a href="https://web.facebook.com/"><ion-icon name="logo-facebook" class="icon"></ion-icon> 
+            <a href="https://web.instagram.com"><ion-icon name="logo-instagram"></ion-icon></p></a></a>
+        
+     </footer>
+     
+     <script src="amazon.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   
+</body>
+</html>
